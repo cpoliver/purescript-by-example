@@ -1,5 +1,9 @@
 module Main where
 
-import Control.Monad.Eff.Console
+import Control.Monad.Eff.Console (logShow)
+import Math (sqrt)
+import Prelude
 
-main = log "Hello, World!"
+diagonal w h = sqrt (w * w + h * h)
+
+main = logShow (diagonal 3.0 4.0)
