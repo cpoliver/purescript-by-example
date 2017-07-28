@@ -1,9 +1,11 @@
 module Main where
 
 import Control.Monad.Eff.Console (logShow)
-import Math (sqrt)
+import Math (pi)
 import Prelude
 
-diagonal w h = sqrt (w * w + h * h)
+sq x = x * x
 
-main = logShow (diagonal 3.0 4.0)
+circleArea r = pi * (sq r)
+
+main = logShow (circleArea 4.2)
