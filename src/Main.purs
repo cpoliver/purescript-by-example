@@ -1,11 +1,7 @@
 module Main where
 
+import Control.Bind ((=<<))
 import Control.Monad.Eff.Console (logShow)
-import Math (pi)
-import Prelude
+import Data.Semigroup ((<>))
 
-sq x = x * x
-
-circleArea r = pi * (sq r)
-
-main = logShow (circleArea 4.2)
+main = logShow "OK"
